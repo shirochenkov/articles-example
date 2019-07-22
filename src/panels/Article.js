@@ -17,7 +17,7 @@ class Article extends React.Component {
   };
 
   openSheet = () => {
-    const { articleComponent: ArticlesView } = this.props;
+    const { articleComponent: ArticleView } = this.props;
 
     this.setState({
       popout: (
@@ -27,7 +27,7 @@ class Article extends React.Component {
               x
             </div>
             <div>
-              <ArticlesView />
+              <ArticleView />
             </div>
           </div>
         </div>

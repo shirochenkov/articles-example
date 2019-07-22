@@ -3,7 +3,7 @@ import { View } from "@vkontakte/vkui";
 import "@vkontakte/vkui/dist/vkui.css";
 
 import Article from "./panels/Article";
-import ArticlePreview from "./components/ArticlePreview";
+import ArticleView from "./components/ArticleView";
 
 class App extends React.Component {
   state = {
@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <View activePanel={this.state.activePanel}>
-        <Article id="article" articleComponent={ArticlePreview} />
+        <Article id="article" articleComponent={ArticleView} />
       </View>
     );
   }
